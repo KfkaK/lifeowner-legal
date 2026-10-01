@@ -2,56 +2,39 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>プライバシーポリシー | LifeOwner</title>
-<style>
-  :root {
-    --bg: #FAFAF8;
-    --text: #1F2933;
-    --muted: #5B6770;
-    --accent: #3E5C76;
-    --border: #E1E4E8;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #16191D;
-      --text: #E8EAED;
-      --muted: #9AA5AD;
-      --accent: #8FB0CC;
-      --border: #2E3439;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", sans-serif;
-    line-height: 1.9;
-  }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
-  h1 { font-size: 1.5rem; font-weight: 600; }
-  h2 { font-size: 1.1rem; font-weight: 600; margin-top: 2.5em; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
-  p, li { font-size: 0.95rem; }
-  ul { padding-left: 1.4em; }
-  .meta { color: var(--muted); font-size: 0.85rem; }
-  a { color: var(--accent); }
-  footer { max-width: 680px; margin: 0 auto; padding: 0 20px 48px; color: var(--muted); font-size: 0.85rem; }
-</style>
+<meta name="description" content="iOSアプリ「LifeOwner」のプライバシーポリシー。収集しない情報、端末内データの扱い、カレンダーとスクリーンタイムへのアクセスについて説明します。">
+<link rel="canonical" href="https://lifeowner.site/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LifeOwner">
+<meta property="og:title" content="プライバシーポリシー | LifeOwner">
+<meta property="og:description" content="iOSアプリ「LifeOwner」のプライバシーポリシー。収集しない情報、端末内データの扱い、カレンダーとスクリーンタイムへのアクセスについて説明します。">
+<meta property="og:url" content="https://lifeowner.site/privacy.html">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16191D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <main>
   <h1>「LifeOwner」プライバシーポリシー</h1>
-  <p class="meta">最終更新日: 2026-10-01</p>
+  <p class="meta">制定日: <time datetime="2026-09-04">2026-09-04</time> ／ 最終更新日: <time datetime="2026-10-01">2026-10-01</time></p>
 
   <h2>基本方針</h2>
-  <p>「LifeOwner」（以下「本アプリ」）は、あなたの行動記録を収集しないことを設計の前提としています。
+  <p>本ポリシーは、「LifeOwner」（以下「本アプリ」）の開発者（以下「開発者」）が、本アプリにおける情報の取り扱いについて定めるものです。</p>
+  <p>本アプリは、あなたの行動記録を収集しないことを設計の前提としています。
   スケジュール、実行の記録、ふりかえりの内容は、すべてあなたの端末の中だけに保存されます。</p>
 
   <h2>収集しない情報</h2>
   <p>本アプリは、以下の情報を収集・送信しません。</p>
   <ul>
-    <li>氏名、メールアドレスなどの個人情報（アカウント登録自体がありません）</li>
+    <li>氏名、メールアドレスなどの個人情報（アカウント登録自体がありません。
+      メールでお問い合わせいただいた場合の扱いは「お問い合わせの際にいただく情報」をご覧ください）</li>
     <li>スケジュール・タスク名・メモ・ふりかえりの内容</li>
     <li>セッションの実行記録・達成率などの統計</li>
     <li>遮断対象・許可対象として選択したアプリの情報
@@ -60,9 +43,15 @@
     <li>広告識別子（本アプリは広告SDK・トラッキングSDKを含みません）</li>
   </ul>
 
+  <h2>お問い合わせの際にいただく情報</h2>
+  <p>メールでお問い合わせいただいた場合、開発者はあなたのメールアドレスとお問い合わせの内容を受け取ります。
+  これらは、お問い合わせへの回答と、不具合の調査・本アプリの改善のためにのみ利用します。</p>
+
   <h2>端末内のデータ</h2>
   <ul>
     <li>本アプリのデータは端末内に保存され、iOSの標準バックアップ（iCloudバックアップ等）の対象になります</li>
+    <li>端末内のデータは、あなたが削除するまで端末内に保持されます。
+      開発者はこれらのデータを受け取らず、保管するためのサーバーも持ちません</li>
     <li>データはアプリ内の「設定 → すべてのデータを削除」からいつでも削除できます。
       このとき、本アプリが作成したカレンダー「LifeOwner」（書き込み機能を使った場合）も、
       過ぎた予定を含めて削除します</li>
@@ -85,6 +74,10 @@
       サードパーティの分析SDKは使用していません。</li>
   </ul>
 
+  <h2>第三者への提供</h2>
+  <p>開発者は、法令に基づく場合を除き、あなたの情報を第三者に提供・販売しません。
+  上記の購入処理とクラッシュ情報は、Apple の仕組みの中で行われるものです。</p>
+
   <h2>カレンダーへのアクセス（該当機能を使う場合）</h2>
   <p>カレンダー連携の機能を有効にした場合に限り、本アプリは端末のカレンダーにアクセスします。用途は次の2つです。</p>
   <ul>
@@ -104,11 +97,23 @@
   この許可は、あなた自身が設定した時間にあなた自身が選んだアプリを制限する目的でのみ使用します。
   他者の利用状況の監視には使用できず、そのような機能もありません。</p>
 
+  <h2>アクセス許可の取り消し</h2>
+  <p>スクリーンタイムとカレンダーへのアクセス許可は、iOS の「設定」からいつでも取り消せます。
+  取り消した場合、その許可を使う機能（アプリの遮断、カレンダー連携）は使えなくなります。</p>
+
+  <h2>開示・訂正・削除などのご請求</h2>
+  <p>本アプリの利用に伴って、開発者があなたの行動記録などのデータを保有することはありません。
+  お問い合わせでいただいた情報の開示・訂正・削除などのご請求や、本ポリシーに関するご意見・苦情は、
+  下記のお問い合わせ先で受け付けます。</p>
+
   <h2>変更について</h2>
-  <p>本ポリシーを変更する場合は、アプリ内およびこのページでお知らせします。</p>
+  <p>本ポリシーを変更する場合は、アプリ内およびこのページでお知らせします。
+  変更後のポリシーは、このページに掲載した時点から適用されます。</p>
 
   <h2>お問い合わせ</h2>
-  <p><a href="mailto:rokota1129@gmail.com">rokota1129@gmail.com</a></p>
+  <p>「LifeOwner」開発者<br>
+  <a href="mailto:rokota1129@gmail.com?subject=LifeOwner%20%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">rokota1129@gmail.com</a></p>
+  <p>開発者の氏名・住所は、お求めに応じて遅滞なく回答します。</p>
 </main>
 <footer>
   <p><a href="./index.html">サポートページへ戻る</a></p>

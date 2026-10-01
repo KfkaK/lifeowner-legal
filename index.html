@@ -2,40 +2,23 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>サポート | LifeOwner</title>
-<style>
-  :root {
-    --bg: #FAFAF8;
-    --text: #1F2933;
-    --muted: #5B6770;
-    --accent: #3E5C76;
-    --border: #E1E4E8;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #16191D;
-      --text: #E8EAED;
-      --muted: #9AA5AD;
-      --accent: #8FB0CC;
-      --border: #2E3439;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", sans-serif;
-    line-height: 1.9;
-  }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
-  h1 { font-size: 1.5rem; font-weight: 600; }
-  h2 { font-size: 1.1rem; font-weight: 600; margin-top: 2.5em; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
-  p, li { font-size: 0.95rem; }
-  a { color: var(--accent); }
-  .muted { color: var(--muted); }
-</style>
+<meta name="description" content="iOSアプリ「LifeOwner」のサポートページ。お問い合わせ先、よくある質問、プライバシーポリシーをご案内します。">
+<link rel="canonical" href="https://lifeowner.site/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LifeOwner">
+<meta property="og:title" content="サポート | LifeOwner">
+<meta property="og:description" content="iOSアプリ「LifeOwner」のサポートページ。お問い合わせ先、よくある質問、プライバシーポリシーをご案内します。">
+<meta property="og:url" content="https://lifeowner.site/">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16191D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="./favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <main>
@@ -45,18 +28,34 @@
 
   <h2>お問い合わせ</h2>
   <p>不具合の報告・ご要望・ご質問は、メールでお寄せください。</p>
-  <p><a href="mailto:rokota1129@gmail.com">rokota1129@gmail.com</a></p>
+  <p><a href="mailto:rokota1129@gmail.com?subject=LifeOwner%20%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">rokota1129@gmail.com</a></p>
+  <p>お問い合わせでいただいた情報の扱いは、<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</p>
 
   <h2>よくある質問</h2>
-  <p><strong>Q. 遮断が効きません。</strong><br>
-  iOSの「設定 &gt; スクリーンタイム」で本アプリのアクセスが許可されているかご確認ください。
+  <h3>Q. 遮断が効きません。</h3>
+  <p>iOSの「設定 &gt; スクリーンタイム」で本アプリのアクセスが許可されているかご確認ください。
   アプリ内の「設定 &gt; 遮断機能の状態」からも確認できます。</p>
-  <p><strong>Q. 遮断を今すぐ解除したいときは？</strong><br>
-  アプリ内の集中画面から解除できます（強度に応じて待機が入ります）。
+
+  <h3>Q. 遮断を今すぐ解除したいときは？</h3>
+  <p>アプリ内の集中画面から解除できます（強度に応じて待機が入ります）。
   万一アプリ側で解除できない場合も、iOSの「設定 &gt; スクリーンタイム」から
   本アプリのアクセスを取り消せば必ず解除されます。</p>
-  <p><strong>Q. データはどこに保存されますか？</strong><br>
-  すべて端末の中だけに保存されます。外部への送信はありません。
+
+  <h3>Q. カレンダーへの書き込みをやめたいときは？</h3>
+  <p>「予定枠をカレンダーに書き込む」をオフにすると、今後の予定はカレンダーから削除されます
+  （すでに過ぎた予定は残ります）。本アプリが作成したカレンダー「LifeOwner」ごと消したい場合は、
+  iOS のカレンダーアプリで削除できます。</p>
+
+  <h3>Q. サブスクリプションを解約したいときは？</h3>
+  <p>iOSの「設定 &gt; [ご自身の名前] &gt; サブスクリプション」から解約できます。
+  解約しても、支払い済みの期間が終わるまではそのまま利用できます。</p>
+
+  <h3>Q. 返金を受けたいときは？</h3>
+  <p>App Store での購入・返金は Apple が取り扱います。
+  Apple の<a href="https://reportaproblem.apple.com/">「問題を報告する」ページ</a>からリクエストしてください。</p>
+
+  <h3>Q. データはどこに保存されますか？</h3>
+  <p>すべて端末の中だけに保存されます。外部への送信はありません。
   詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</p>
 
   <h2>各種ドキュメント</h2>
