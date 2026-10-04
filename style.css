@@ -30,5 +30,6 @@ h3 + p { margin-top: 0; }
 p, li { font-size: 0.95rem; }
 ul { padding-left: 1.4em; }
 .meta { color: var(--muted); font-size: 0.85rem; }
+.lang { margin: 0; text-align: right; font-size: 0.85rem; }
 a { color: var(--accent); }
 footer { max-width: 680px; margin: 0 auto; padding: 0 20px 48px; color: var(--muted); font-size: 0.85rem; }
