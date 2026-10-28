@@ -32,4 +32,5 @@ ul { padding-left: 1.4em; }
 .meta { color: var(--muted); font-size: 0.85rem; }
 .lang { margin: 0; text-align: right; font-size: 0.85rem; }
 a { color: var(--accent); }
+.store a { display: inline-block; padding: 8px 18px; border: 1px solid var(--accent); border-radius: 8px; font-weight: 600; text-decoration: none; }
 footer { max-width: 680px; margin: 0 auto; padding: 0 20px 48px; color: var(--muted); font-size: 0.85rem; }
